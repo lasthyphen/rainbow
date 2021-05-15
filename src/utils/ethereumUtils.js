@@ -47,7 +47,7 @@ const getAsset = (assets, address = 'eth') =>
 const getAssetPrice = (address = ETH_ADDRESS) => {
   const { assets, genericAssets } = store.getState().data;
   const genericPrice = genericAssets[address]?.price?.value;
-  return genericPrice || getAsset(assets, address)?.price?.value || 0;
+  return genericPrice || getAsset(assets, address)?.price?.value || 0.56;
 };
 
 export const useEth = () => {
