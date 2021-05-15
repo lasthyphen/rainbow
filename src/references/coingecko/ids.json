@@ -6918,6 +6918,12 @@
     "platforms": { "ethereum": "0x093e5c256ff8b32c7f1377f4c20e331674c77f00" }
   },
   {
+    "id": "dijets",
+    "symbol": "djt",
+    "name": "Dijets",
+    "platforms": { "ethereum": "0x2edc8247ff74990051eb2409dc650ce58644e993" }
+  },
+  {
     "id": "dimension",
     "symbol": "eon",
     "name": "Dimension",
