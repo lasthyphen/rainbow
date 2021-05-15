@@ -231,7 +231,7 @@ const AddFundsInterstitial = ({ network, offsetY = 0 }) => {
         {network === networkTypes.mainnet ? (
           <Fragment>
             <Title>
-              To get started, buy some ETH{ios ? ` with Apple Pay` : ''}
+              To get started, buy some Dijets{ios ? ` with Apple Pay` : ''}
             </Title>
             <Row justify="space-between" marginVertical={30}>
               <AmountButton
@@ -271,11 +271,11 @@ const AddFundsInterstitial = ({ network, offsetY = 0 }) => {
             </InterstitialButtonRow>
             {!isSmallPhone && <InterstitialDivider />}
             <Subtitle isSmallPhone={isSmallPhone}>
-              or send ETH to your wallet
+              or send Dijets to your wallet
             </Subtitle>
 
             <Paragraph>
-              Send from Coinbase or another exchange—or ask a friend!
+              Send from existing DJT Wallet—or ask a friend!
             </Paragraph>
           </Fragment>
         ) : (
