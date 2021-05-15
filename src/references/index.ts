@@ -43,6 +43,7 @@ export const ETH_ICON_URL = 'https://s3.amazonaws.com/token-icons/eth.png';
 
 export const ETH_COINGECKO_ID = 'ethereum';
 export const ETH_ADDRESS = 'eth';
+export const DJT_ADDRESS = '0x2edc8247ff74990051eb2409dc650ce58644e993';
 export const WETH_ADDRESS = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2';
 export const CDAI_CONTRACT = '0x5d3a536e4d6dbd6114cc1ead35777bab948e3643';
 export const SAI_ADDRESS = '0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359';
@@ -66,7 +67,7 @@ export const AddCashCurrencies = {
     ETH: ETH_ADDRESS,
   },
   mainnet: {
-    DAI: DAI_ADDRESS,
+    DJT: DJT_ADDRESS,
     ETH: ETH_ADDRESS,
   },
 };
@@ -85,10 +86,10 @@ export const AddCashCurrencyInfo = {
     },
   },
   mainnet: {
-    [DAI_ADDRESS]: {
-      decimals: 18,
-      name: 'Dai',
-      symbol: 'DAI',
+    [DJT_ADDRESS]: {
+      decimals: 6,
+      name: 'Dijets',
+      symbol: 'DJT',
     },
     [ETH_ADDRESS]: {
       decimals: 18,
@@ -99,7 +100,7 @@ export const AddCashCurrencyInfo = {
 };
 
 export const DefaultUniswapFavorites = {
-  mainnet: [ETH_ADDRESS, DAI_ADDRESS, WBTC_ADDRESS, SOCKS_ADDRESS],
+  mainnet: [ETH_ADDRESS, DJT_ADDRESS, DAI_ADDRESS, WBTC_ADDRESS, SOCKS_ADDRESS],
   rinkeby: [
     // Ethereum
     ETH_ADDRESS,
