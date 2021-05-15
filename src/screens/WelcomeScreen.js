@@ -462,7 +462,7 @@ export default function WelcomeScreen() {
         borderWidth: ios ? 0 : 3,
         width: 230 + (ios ? 0 : 6),
       },
-      text: 'Get a new wallet',
+      text: 'Get a Dijets wallet',
       textColor: colors.white,
     };
   }, [rValue]);

@@ -41,11 +41,11 @@ import {
 const { RainbowRequestReview, RNReview } = NativeModules;
 
 export const SettingsExternalURLs = {
-  rainbowHomepage: 'https://rainbow.me',
+  rainbowHomepage: 'https://dijets.io',
   review:
-    'itms-apps://itunes.apple.com/us/app/appName/id1457119021?mt=8&action=write-review',
-  twitterDeepLink: 'twitter://user?screen_name=rainbowdotme',
-  twitterWebUrl: 'https://twitter.com/rainbowdotme',
+    'itms-apps://itunes.apple.com/us/app/appName/id19088xxr?mt=8&action=write-review',
+  twitterDeepLink: 'twitter://user?screen_name=officialdijets',
+  twitterWebUrl: 'https://twitter.com/OfficialDijets',
 };
 
 const CheckmarkIcon = styled(Icon).attrs({
@@ -154,7 +154,7 @@ export default function SettingsSection({
 
   const onPressShare = useCallback(() => {
     Share.share({
-      message: `👋️ Hey friend! You should download Rainbow, it's my favorite Ethereum wallet 🌈️🌈️🌈️🌈️🌈️🌈️🌈️🌈️🌈️🌈️ ${SettingsExternalURLs.rainbowHomepage}`,
+      message: `👋️ Swap, Stake, Save and Send Dijets plus many more Dijetal Assets...  ${SettingsExternalURLs.rainbowHomepage}`,
     });
   }, []);
 
@@ -271,14 +271,14 @@ export default function SettingsSection({
       <ColumnWithDividers dividerRenderer={ListItemDivider}>
         <ListItem
           icon={<Emoji name="rainbow" />}
-          label="Share Rainbow"
+          label="Share Dijets"
           onPress={onPressShare}
           testID="share-section"
           value={SettingsExternalURLs.rainbowHomepage}
         />
         <ListItem
           icon={<Emoji name="bird" />}
-          label="Follow Us on Twitter"
+          label="Follow Dijets on Twitter"
           onPress={onPressTwitter}
           testID="twitter-section"
           value={SettingsExternalURLs.twitter}
@@ -292,7 +292,7 @@ export default function SettingsSection({
         {isReviewAvailable && (
           <ListItem
             icon={<Emoji name="red_heart" />}
-            label="Review Rainbow"
+            label="Review Dijets Wallet"
             onPress={onPressReview}
             testID="review-section"
           />

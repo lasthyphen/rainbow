@@ -50,7 +50,7 @@
         "assessment": "Results of our security assessment",
         "text_mobile": "You need to use an Ethereum Wallet to access Balance Manager to view, send and exchange your Ether and Ethereum-based tokens."
       },
-      "back": "Back to rainbow.me",
+      "back": "Back to Dijets Wallet",
       "coming_soon": "Coming soon."
     },
     "cloud": {
@@ -63,7 +63,7 @@
       "tab_transactions": "Transactions",
       "tab_interactions": "Interactions",
       "tab_uniquetokens": "Unique Tokens",
-      "tab_balances_tooltip": "Ethereum and Token Balances",
+      "tab_balances_tooltip": "Dijets and Token Balances",
       "tab_transactions_tooltip": "Transactions and Token Transfers",
       "tab_interactions_tooltip": "Smart Contract Interactions",
       "tab_uniquetokens_tooltip": "Unique Tokens",
@@ -162,7 +162,7 @@
     "message": {
       "web3_not_available": "Please install the MetaMask Chrome extension",
       "web3_not_unlocked": "Please unlock your MetaMask wallet",
-      "walletconnect_not_unlocked": "Please connect using WalletConnect",
+      "walletconnect_not_unlocked": "Please connect using DijetLink",
       "web3_unknown_network": "Unknown network, please switch to another one",
       "page_not_found": "404 Page Not Found",
       "coming_soon": "Coming soon...",
@@ -184,7 +184,7 @@
     },
     "notification": {
       "error": {
-        "no_accounts_found": "No Ethereum Accounts Found",
+        "no_accounts_found": "No Dijets Accounts Found",
         "invalid_address": "Address is invalid, please check again",
         "insufficient_balance": "Insufficient balance in this account",
         "insufficient_for_fees": "Insufficient balance to cover transaction fees",
@@ -284,8 +284,8 @@
         "please_seed_phrase": "Please authenticate to view private key"
       },
       "push_notifications": {
-        "please_enable_title": "Rainbow would like to send you push notifications",
-        "please_enable_body": "It looks like you are using WalletConnect. Please enable push notifications to be notified of transaction requests from WalletConnect."
+        "please_enable_title": "Dijets would like to send you push notifications",
+        "please_enable_body": "It looks like you are using DijetLink. Please enable push notifications to be notified of transaction requests from DijetLink."
       },
       "assets": {
         "no_price": "Small Balances"
@@ -293,14 +293,14 @@
       "intro": {
         "create_wallet": "Create a Wallet",
         "instructions": "Please do not store more in your wallet than you are willing to lose.",
-        "warning": "This is alpha software.",
-        "welcome": "Welcome to Rainbow"
+        "warning": "This is beta software.",
+        "welcome": "Welcome to Dijets Wallet"
       },
       "feedback": {
         "cancel": "No thanks",
         "choice": "Would you like to manually copy our feedback email address to your clipboard?",
         "copy_email_address": "Copy email address",
-        "email_subject": "📱 Rainbow Beta Feedback",
+        "email_subject": "📱 Dijets Beta Feedback",
         "error": "Error launching email client",
         "send": "Send Feedback"
       },
@@ -323,7 +323,7 @@
       "transaction": {
         "alert": {
           "authentication": "Authentication Failed",
-          "cancelled_transaction": "Failed to send cancelled transaction to WalletConnect",
+          "cancelled_transaction": "Failed to send cancelled transaction to DijetLink",
           "failed_transaction": "Failed to send transaction",
           "failed_sign_message": "Failed to sign message",
           "failed_transaction_status": "Failed to send failed transaction status",

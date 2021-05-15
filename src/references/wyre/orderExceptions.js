@@ -54,7 +54,7 @@ export const orderExceptions = {
       tryAgain: true,
     },
     [orderCreationErrorCodes.AVS_ZIPCODE]: {
-      message: 'Your zipcode is incorrect',
+      message: 'Your postcode is incorrect',
       tryAgain: true,
     },
     [orderCreationErrorCodes.AVS_UNAVAILABLE_BILLING]: {

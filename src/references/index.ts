@@ -43,7 +43,7 @@ export const ETH_ICON_URL = 'https://s3.amazonaws.com/token-icons/eth.png';
 
 export const ETH_COINGECKO_ID = 'ethereum';
 export const ETH_ADDRESS = 'eth';
-export const DJT_ADDRESS = '0x2edc8247ff74990051eb2409dc650ce58644e993';
+export const DJT_ADDRESS = '0x2EDC8247fF74990051eb2409Dc650ce58644E993';
 export const WETH_ADDRESS = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2';
 export const CDAI_CONTRACT = '0x5d3a536e4d6dbd6114cc1ead35777bab948e3643';
 export const SAI_ADDRESS = '0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359';
