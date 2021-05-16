@@ -164,7 +164,7 @@ export const fetchAssetPrices = assetAddress => (dispatch, getState) => {
   assetsSocket.emit(...payload);
 };
 
-const explorerUnsubscribe = () => (dispatch, getState) => {
+const explorerUnsubscribe = () => (_dispatch, getState) => {
   const {
     addressSocket,
     addressSubscribed,
@@ -333,7 +333,7 @@ export const emitChartsRequest = (
   assetAddress,
   chartType = DEFAULT_CHART_TYPE,
   givenNativeCurrency
-) => (dispatch, getState) => {
+) => (_dispatch, getState) => {
   const nativeCurrency =
     givenNativeCurrency || getState().settings.nativeCurrency;
   const { assetsSocket } = getState().explorer;

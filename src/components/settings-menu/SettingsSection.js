@@ -24,6 +24,16 @@ import DarkModeIcon from '@rainbow-me/assets/settingsDarkMode.png';
 import DarkModeIconDark from '@rainbow-me/assets/settingsDarkModeDark.png';
 import NetworkIcon from '@rainbow-me/assets/settingsNetwork.png';
 import NetworkIconDark from '@rainbow-me/assets/settingsNetworkDark.png';
+import ShareIcon from '@rainbow-me/assets/SettingsShare.png';
+import ShareIconDark from '@rainbow-me/assets/SettingsShareDark.png';
+import TwitterIcon from '@rainbow-me/assets/SettingsTwitter.png';
+import TwitterIconDark from '@rainbow-me/assets/SettingsTwitterDark.png';
+import FeedbackIcon from '@rainbow-me/assets/SettingsFeedback.png';
+import FeedbackIconDark from '@rainbow-me/assets/SettingsFeedbackDark.png';
+import ReviewIcon from '@rainbow-me/assets/SettingsReview.png';
+import ReviewIconDark from '@rainbow-me/assets/SettingsReviewDark.png';
+import CodeIcon from '@rainbow-me/assets/SettingsCode.png';
+import CodeIconDark from '@rainbow-me/assets/SettingsCodeDark.png';
 import networkInfo from '@rainbow-me/helpers/networkInfo';
 import WalletTypes from '@rainbow-me/helpers/walletTypes';
 import {
@@ -270,28 +280,44 @@ export default function SettingsSection({
       <ListFooter />
       <ColumnWithDividers dividerRenderer={ListItemDivider}>
         <ListItem
-          icon={<Emoji name="rainbow" />}
+          icon={
+            <SettingIcon
+              source={isDarkMode ? ShareIconDark : ShareIcon}
+            />
+          }
           label="Share Dijets"
           onPress={onPressShare}
           testID="share-section"
           value={SettingsExternalURLs.rainbowHomepage}
         />
         <ListItem
-          icon={<Emoji name="bird" />}
+          icon={
+            <SettingIcon
+              source={isDarkMode ? TwitterIconDark : TwitterIcon}
+            />
+          }
           label="Follow Dijets on Twitter"
           onPress={onPressTwitter}
           testID="twitter-section"
           value={SettingsExternalURLs.twitter}
         />
         <ListItem
-          icon={<Emoji name={ios ? 'speech_balloon' : 'lady_beetle'} />}
+          icon={
+            <SettingIcon
+              source={isDarkMode ? FeedbackIconDark : FeedbackIcon}
+            />
+          }
           label={ios ? 'Feedback and Support' : 'Feedback & Bug Reports'}
           onPress={onSendFeedback}
           testID="feedback-section"
         />
         {isReviewAvailable && (
           <ListItem
-            icon={<Emoji name="red_heart" />}
+          icon={
+            <SettingIcon
+              source={isDarkMode ? ReviewIconDark : ReviewIcon}
+            />
+          }
             label="Review Dijets Wallet"
             onPress={onPressReview}
             testID="review-section"
@@ -302,7 +328,11 @@ export default function SettingsSection({
         <Fragment>
           <ListFooter height={10} />
           <ListItem
-            icon={<Emoji name="construction" />}
+            icon={
+              <SettingIcon
+                source={isDarkMode ? CodeIconDark : CodeIcon}
+              />
+            }
             label="Developer Settings"
             onPress={onPressDev}
             testID="developer-section"

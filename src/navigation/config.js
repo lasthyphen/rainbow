@@ -275,7 +275,7 @@ export const wyreWebviewOptions = colors => ({
     ...headerConfigOptions.headerTitleStyle,
     color: colors.dark,
   },
-  title: 'Add Cash',
+  title: 'Add Dijets',
 });
 
 export const settingsOptions = colors => ({

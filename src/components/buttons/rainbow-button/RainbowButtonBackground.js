@@ -11,7 +11,7 @@ import { magicMemo } from '@rainbow-me/utils';
 
 const RainbowGradientColorsFactory = darkMode => ({
   inner: {
-    addCash: ['#FFB114', '#FF54BB', '#00F0FF'],
+    addCash: ['#116666', '#114455', '#111133'],
     default: darkModeThemeColors.gradients.rainbow,
     disabled: darkMode
       ? [
@@ -22,8 +22,8 @@ const RainbowGradientColorsFactory = darkMode => ({
       : ['#B0B3B9', '#B0B3B9', '#B0B3B9'],
   },
   outer: {
-    addCash: ['#F5AA13', '#F551B4', '#00E6F5'],
-    default: ['#F5AA13', '#F551B4', '#799DD5'],
+    addCash: ['#116666', '#114455', '#111133'],
+    default: ['#116666', '#114455', '#111133'],
     disabled: darkMode
       ? [
           darkModeThemeColors.blueGreyDark20,

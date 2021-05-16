@@ -142,7 +142,7 @@ const DisplayDappNames = Object.freeze({
   },
   'zerion.io': {
     name: 'Zerion',
-    uri: null,
+    uri: buildAssetUrl('zerion.io'),
   },
   'zora.co': {
     name: 'Zora',
