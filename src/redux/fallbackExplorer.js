@@ -14,6 +14,7 @@ import networkTypes from '@rainbow-me/helpers/networkTypes';
 import {
   balanceCheckerContractAbi,
   coingeckoIdsFallback,
+  DJT_ADDRESS,
   ETH_ADDRESS,
   ETH_COINGECKO_ID,
   migratedTokens,

@@ -17,8 +17,8 @@
     "decimals": 2,
     "emojiName": "united_states",
     "label": "United States Dollar",
-    "mask": "[099999999999]{.}[00]",
-    "placeholder": "0.00",
+    "mask": "[099999999999]{.}[56]",
+    "placeholder": "0.56",
     "smallThreshold": 1,
     "symbol": "$"
   },

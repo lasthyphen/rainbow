@@ -59,7 +59,7 @@ export default function DiscoverHeaderButton() {
       <Row>
         <ShadowStack
           {...position.coverAsObject}
-          backgroundColor={colors.white}
+          backgroundColor={colors.grey}
           borderRadius={50}
           shadows={shadows}
           {...(android && {
@@ -71,8 +71,8 @@ export default function DiscoverHeaderButton() {
           <BackgroundGradient />
         </ShadowStack>
         <DiscoverButtonContent>
-          <Emoji lineHeight={18} size="medium">
-            🪐
+          <Emoji lineHeight={18} size="small">
+            🔆
           </Emoji>
           <Text
             color={colors.alpha(colors.blueGreyDark, isDarkMode ? 1 : 0.8)}
@@ -80,7 +80,7 @@ export default function DiscoverHeaderButton() {
             size="large"
             weight="bold"
           >
-            Discover
+            Dijets Finance
           </Text>
         </DiscoverButtonContent>
       </Row>

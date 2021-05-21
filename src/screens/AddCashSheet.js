@@ -101,7 +101,7 @@ export default function AddCashSheet() {
             margin={4}
             paddingTop={isNativeStackAvailable ? 7 : 5}
           >
-            <SheetTitle>Add Cash</SheetTitle>
+            <SheetTitle>Buy Dijets with Apple Pay</SheetTitle>
             {!isPaymentComplete && (
               <SheetSubtitleCycler
                 animatedValue={errorAnimation}

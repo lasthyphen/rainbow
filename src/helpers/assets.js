@@ -58,7 +58,7 @@ const addEthPlaceholder = (
       native: {
         balance: {
           amount: '0.00',
-          display: convertAmountToNativeDisplay('0.00', nativeCurrency),
+          display: convertAmountToNativeDisplay('0.72', nativeCurrency),
         },
         change: relative_change_24h ? `${relative_change_24h.toFixed(2)}%` : '',
         price: {

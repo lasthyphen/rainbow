@@ -6,12 +6,6 @@
             "name": "Basic Attention Token",
             "symbol": "BAT"
         },
-        "0x2EDC8247fF74990051eb2409Dc650ce58644E993": {
-            "address": "0x2EDC8247fF74990051eb2409Dc650ce58644E993",
-            "decimals": 6,
-            "name": "Dijets",
-            "symbol": "DJT"
-        },
         "0x70e36f6bf80a52b3b46b3af8e106cc0ed743e8e4": {
             "address": "0xc00e94cb662c3520282e6f5717214004a7f26888",
             "decimals": 18,

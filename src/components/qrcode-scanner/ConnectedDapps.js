@@ -62,7 +62,7 @@ function ConnectedDapps() {
               size="lmedium"
               weight="heavy"
             >
-              ️‍🌈 {walletConnectorsByDappName.length} app
+              ️‍ 🟢 {walletConnectorsByDappName.length} app
               {walletConnectorsByDappName.length === 1 ? '' : 's'} connected 􀯼
             </LabelText>
           </OverlayBlur>

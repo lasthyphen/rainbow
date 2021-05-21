@@ -9,7 +9,7 @@ import DiscoverSearchContainer from './DiscoverSearchContainer';
 
 const HeaderTitle = styled(Text).attrs(({ theme: { colors } }) => ({
   align: 'center',
-  color: colors.alpha(colors.blueGreyDark, 0.8),
+  color: colors.alpha(colors.blueGreyDark, 0.9),
   letterSpacing: 'roundedMedium',
   lineHeight: 'loose',
   size: 'large',
@@ -43,9 +43,9 @@ export default function DiscoverSheetContent() {
       <HeaderTitle
         testID={showSearch ? 'discover-header-search' : 'discover-header'}
       >
-        {showSearch ? 'Search' : 'Discover'}
+        {showSearch ? 'Search' : 'DIJETS FINANCE'}
       </HeaderTitle>
-      <ColumnWithMargins flex={1} margin={42} testID="discover-home">
+      <ColumnWithMargins flex={1} margin={50} testID="discover-home">
         <DiscoverSearchContainer
           ref={ref}
           setShowSearch={setShowSearch}

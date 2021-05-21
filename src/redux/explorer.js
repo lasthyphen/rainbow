@@ -20,7 +20,7 @@ import { disableCharts, forceFallbackProvider } from '@rainbow-me/config/debug';
 import ChartTypes from '@rainbow-me/helpers/chartTypes';
 import currencyTypes from '@rainbow-me/helpers/currencyTypes';
 import NetworkTypes from '@rainbow-me/helpers/networkTypes';
-import { DPI_ADDRESS, ETH_ADDRESS } from '@rainbow-me/references';
+import { DPI_ADDRESS, ETH_ADDRESS, DJT_ADDRESS } from '@rainbow-me/references';
 import { TokensListenedCache } from '@rainbow-me/utils';
 import logger from 'logger';
 
@@ -95,7 +95,7 @@ const assetPricesSubscription = (
   currency,
   action = 'subscribe'
 ) => {
-  const assetCodes = concat(tokenAddresses, ETH_ADDRESS, DPI_ADDRESS);
+  const assetCodes = concat(tokenAddresses, ETH_ADDRESS, DPI_ADDRESS, DJT_ADDRESS);
   return [
     action,
     {

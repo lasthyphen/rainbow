@@ -23,17 +23,17 @@ typedef NS_ENUM(NSInteger, RNSScreenStackAnimation) {
 
 @interface RCTConvert (RNSScreen)
 
-+ (RNSScreenStackPresentation)RNSScreenStackPresentation:(id)json;
-+ (RNSScreenStackAnimation)RNSScreenStackAnimation:(id)json;
++ (RNSScreenStackPresentation)RNSScreenStackPresentation:(id _Nullable )json;
++ (RNSScreenStackAnimation)RNSScreenStackAnimation:(id _Nullable )json;
 
 @end
 
 @interface RNCMScreen : UIViewController
 
-@property (nonatomic, strong) id<UIViewControllerTransitioningDelegate> transDelegate;
-- (instancetype)initWithView:(UIView *)view;
+@property (nonatomic, strong) id<UIViewControllerTransitioningDelegate> _Nonnull transDelegate;
+- (instancetype _Nullable )initWithView:(UIView *_Nullable)view;
 - (void)notifyFinishTransitioning;
-- (UIViewController*) parentVC;
+- (UIViewController*_Nullable) parentVC;
 
 @end
 
@@ -42,12 +42,12 @@ typedef NS_ENUM(NSInteger, RNSScreenStackAnimation) {
 
 @interface RNCMScreenView : RCTView
 
-@property (nonatomic, copy) RCTDirectEventBlock onAppear;
-@property (nonatomic, copy) RCTDirectEventBlock onDismissed;
-@property (nonatomic, copy) RCTDirectEventBlock onWillDismiss;
-@property (nonatomic, copy) RCTDirectEventBlock onTouchTop;
-@property (weak, nonatomic) UIView *reactSuperview;
-@property (nonatomic, retain) UIViewController *controller;
+@property (nonatomic, copy) RCTDirectEventBlock _Nullable onAppear;
+@property (nonatomic, copy) RCTDirectEventBlock _Nonnull onDismissed;
+@property (nonatomic, copy) RCTDirectEventBlock _Nullable onWillDismiss;
+@property (nonatomic, copy) RCTDirectEventBlock _Nullable onTouchTop;
+@property (weak, nonatomic) UIView * _Nullable reactSuperview;
+@property (nonatomic, retain) UIViewController * _Nullable controller;
 @property (nonatomic, readonly) BOOL dismissed;
 @property (nonatomic) BOOL active;
 @property (nonatomic) BOOL customStack;
@@ -56,8 +56,8 @@ typedef NS_ENUM(NSInteger, RNSScreenStackAnimation) {
 @property (nonatomic) BOOL showDragIndicator;
 @property (nonatomic) BOOL ignoreBottomOffset;
 @property (nonatomic) BOOL interactWithScrollView;
-@property (nonatomic) NSNumber* topOffset;
-@property (nonatomic) NSNumber* cornerRadius;
+@property (nonatomic) NSNumber* _Nullable topOffset;
+@property (nonatomic) NSNumber* _Nullable cornerRadius;
 @property (nonatomic) RNSScreenStackAnimation stackAnimation;
 @property (nonatomic) RNSScreenStackPresentation stackPresentation;
 
@@ -83,5 +83,5 @@ typedef NS_ENUM(NSInteger, RNSScreenStackAnimation) {
 @end
 
 @interface UIView (RNSScreen)
-- (UIViewController *)parentViewController;
+- (UIViewController *_Nonnull)parentViewController;
 @end
